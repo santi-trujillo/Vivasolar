@@ -8,7 +8,7 @@
     <link rel="icon" href="assets/images/fav-icon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
     <script src="assets/js/main.js" defer></script>
 </head>
@@ -17,7 +17,7 @@
     <header class="main-header">
         <div class="container">
             <a href="index.html" class="logo">
-                                <img src="assets/images/logo.png" alt="Vivasolar Colombia Logo">
+                <img src="assets/images/logo.png" alt="Vivasolar Colombia Logo">
             </a>
             <button class="nav-toggle" aria-label="Abrir menú">
                 <span class="hamburger"></span>
@@ -25,7 +25,6 @@
             <nav class="main-nav">
                 <ul>
                     <li><a href="#hero">Inicio</a></li>
-                    <li><a href="#promociones">Promociones</a></li>
                     <li class="has-submenu">
                         <a href="#productos-destacados">Productos</a>
                         <ul class="submenu">
@@ -33,9 +32,10 @@
                             <li><a href="productos/bombas-de-agua.html">Bombas de Agua</a></li>
                         </ul>
                     </li>
-                    <li><a href="#sobre-nosotros">Quiénes Somos</a></li>
                     <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#sobre-nosotros">Quiénes Somos</a></li>
                     <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#contacto" class="cta-button nav-cta">Cotizar Ahora</a></li>
                 </ul>
             </nav>
         </div>
@@ -44,101 +44,52 @@
     <main>
         <section id="hero" class="hero-section">
             <div class="container">
-                <h1>Soluciones de Energía Solar para un Futuro Sostenible</h1>
-                <p>Calidad alemana, precios competitivos y 25 años de garantía.</p>
-                <a href="#contacto" class="cta-button">Contáctanos</a>
+                <h1>Energía Limpia, Ahorro Inteligente</h1>
+                <p>Transforma tu hogar o negocio con energía solar de alta eficiencia. Calidad alemana con 25 años de garantía.</p>
+                <a href="#contacto" class="cta-button">Solicita tu Cotización</a>
             </div>
         </section>
 
-        <section id="promociones" class="content-section">
+        <section id="beneficios" class="content-section">
             <div class="container">
-                <h2>Promociones y Noticias</h2>
-                                <div class="promo-grid">
-                    <article class="card">
-                        <div class="card__image">
-                            <img src="assets/images/promo_carga_vehiculos.jpg" alt="Estación de carga para vehículos eléctricos en Vivasolar Colombia">
+                <h2 class="section-title">Beneficios de la Energía Solar</h2>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <div class="feature-item__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 8v-3a1 1 0 0 0 -1 -1h-10a2 2 0 0 0 0 4h12" /><path d="M17 12v-2" /><path d="M13 12v-2" /><path d="M21 12v-2a1 1 0 0 0 -1 -1h-1" /><path d="M5 21v-16" /><path d="M9 21v-10" /><path d="M13 21v-4" /><path d="M17 21v-2" /><path d="M21 21v-1" /></svg>
                         </div>
-                        <div class="card__content">
-                            <h3 class="card__title">Estación de Carga para Vehículos Eléctricos</h3>
-                            <div class="card__text">
-                                <p>Ya disponible nuestro punto de carga para cualquier vehículo eléctrico (Tipo 2 y GB/T-AC) en Cali. Siga estos pasos:</p>
-                                <ol>
-                                    <li>Revise disponibilidad en el <a href="https://docs.google.com/spreadsheets/d/1I5ljrqTGxYIJHpIhVH6yIOFBpfKuEy27lVtLOyziQQQ/edit?usp=sharing" target="_blank" rel="noopener noreferrer">calendario</a>.</li>
-                                    <li>Diligencie el <a href="https://docs.google.com/forms/d/e/1FAIpQLSd38Wxxqzt6vj3tAboQ_LnIW2RPJFrbjQexhQq6j8QIBQQ51g/viewform?usp=sharing" target="_blank" rel="noopener noreferrer">formulario de reserva</a>.</li>
-                                    <li>Encuéntrenos en Cra 90 No 16-97, Cali.</li>
-                                    <li>Conecte su vehículo y comience a cargar.</li>
-                                </ol>
-                                <p>Servicio 24h. Para más información, contáctenos.</p>
-                            </div>
-                            <a href="#contacto" class="card__link">Leer más</a>
+                        <h3 class="feature-item__title">Ahorro Garantizado</h3>
+                        <p>Reduce tu factura de electricidad desde el primer día con sistemas diseñados para maximizar tu retorno de inversión.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-item__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
                         </div>
-                    </article>
-                                        <article class="card">
-                        <div class="card__image">
-                            <img src="assets/images/icon_pdf.png" alt="Icono de PDF">
+                        <h3 class="feature-item__title">Futuro Sostenible</h3>
+                        <p>Contribuye al medio ambiente generando energía limpia y renovable. Un pequeño cambio con un gran impacto.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-item__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
                         </div>
-                        <div class="card__content">
-                            <h3 class="card__title">Lista de Precios Septiembre 2025</h3>
-                            <div class="card__text">
-                                <p>Consulte nuestra lista de precios más reciente para paneles solares, inversores, baterías y más. Todos los precios incluyen IVA.</p>
-                            </div>
-                            <a href="assets/documents/Lista de precios agosto 2025.pdf" class="card__link" target="_blank" rel="noopener noreferrer">Descargar PDF</a>
-                        </div>
-                    </article>
-                                        <article class="card">
-                        <div class="card__image">
-                            <img src="assets/images/promo_taifu.jpg" alt="Promoción productos TAIFU">
-                        </div>
-                        <div class="card__content">
-                            <h3 class="card__title">Promoción Preventa Productos TAIFU</h3>
-                            <div class="card__text">
-                                <p>Aproveche los precios de preventa en nuestra nueva línea de productos TAIFU. Calidad y rendimiento garantizados.</p>
-                            </div>
-                            <a href="#productos-destacados" class="card__link">Ver productos</a>
-                        </div>
-                    </article>
-                                        <article class="card">
-                        <div class="card__image">
-                            <img src="assets/images/promo_paneles_365w.png" alt="Promoción panel solar 365W">
-                        </div>
-                        <div class="card__content">
-                            <h3 class="card__title">Promoción Paneles Solares 365W</h3>
-                            <div class="card__text">
-                                <p>¡Precio especial de $430.000! Paneles solares de alta eficiencia, ideales para proyectos residenciales y comerciales.</p>
-                            </div>
-                            <a href="#productos-destacados" class="card__link">Más detalles</a>
-                        </div>
-                    </article>
-                                        <article class="card">
-                        <div class="card__image">
-                            <img src="assets/images/promo_reparaciones.png" alt="Servicio de reparaciones de equipos solares">
-                        </div>
-                        <div class="card__content">
-                            <h3 class="card__title">Nuevo Servicio de Reparaciones</h3>
-                            <div class="card__text">
-                                <p>Ofrecemos mantenimiento preventivo y correctivo para sus equipos solares, incluyendo análisis de baterías y optimización de sistemas.</p>
-                            </div>
-                            <a href="#contacto" class="card__link">Consultar</a>
-                        </div>
-                    </article>
-                    
+                        <h3 class="feature-item__title">Autonomía Energética</h3>
+                        <p>Independízate de la red eléctrica convencional y asegura tu suministro de energía ante cualquier eventualidad.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="productos-destacados" class="content-section">
+        <section id="productos-destacados" class="content-section-gray">
             <div class="container">
-                <h2>Productos Destacados</h2>
-                                <div class="promo-grid">
+                <h2>Nuestros Productos Estrella</h2>
+                <div class="promo-grid">
                     <article class="card">
                         <div class="card__image">
-                            <img src="assets/images/promo_paneles_365w.png" alt="Panel Solar">
+                            <img src="assets/images/promo_paneles_365w.png" alt="Panel Solar de Alta Eficiencia">
                         </div>
                         <div class="card__content">
                             <h3 class="card__title">Paneles Solares</h3>
-                            <div class="card__text">
-                                <p>Paneles de alta eficiencia con 25 años de garantía. La mejor calidad alemana para su proyecto.</p>
-                            </div>
+                            <p class="card__text">Máxima eficiencia y durabilidad con nuestra selección de paneles solares de tecnología alemana.</p>
                             <a href="productos/paneles-solares.html" class="card__link">Ver más</a>
                         </div>
                     </article>
@@ -148,10 +99,18 @@
                         </div>
                         <div class="card__content">
                             <h3 class="card__title">Bombas de Agua Solares</h3>
-                            <div class="card__text">
-                                <p>Soluciones eficientes y autónomas para el suministro de agua en zonas rurales y agrícolas.</p>
-                            </div>
+                            <p class="card__text">Soluciones de bombeo eficientes y autónomas, ideales para el sector agrícola y zonas rurales.</p>
                             <a href="productos/bombas-de-agua.html" class="card__link">Ver más</a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="assets/images/promo_taifu.jpg" alt="Inversores y Baterías">
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title">Inversores y Baterías</h3>
+                            <p class="card__text">Optimiza y almacena tu energía con nuestra gama de inversores y baterías de última generación.</p>
+                            <a href="#contacto" class="card__link">Consultar</a>
                         </div>
                     </article>
                 </div>
@@ -160,32 +119,98 @@
 
         <section id="sobre-nosotros" class="content-section">
             <div class="container">
-                <h2>Sobre Vivasolar Colombia</h2>
-                <p><strong>Vivasolar Colombia</strong> es una empresa Líder en la solución de ahorro y tecnología energética para el sector empresarial, industrial y familiar. Brinda asesoría especializada en el ahorro de energía, planificación, instalación, mantenimiento de proyectos solares, cálculo de rentabilidad y comercialización de soluciones solares para aplicaciones residenciales, comerciales e industriales, disminuyendo el impacto ambiental de los mismos, haciendo uso de fuentes energéticas renovables como la energía solar en Colombia.</p><p>Nuestros productos de calidad Alemana, garantizados y desarrollados con alta tecnología e innovación. El equipo de Vivasolar Colombia está formado con expertos alemanes y colombianos dispuestos a resolver y proponer soluciones personalizadas para satisfacer las necesidades de sus clientes.</p>
+                <div class="about-us-grid">
+                    <div class="about-us-text">
+                        <h2>Líderes en Energía Solar en Colombia</h2>
+                        <p><strong>Vivasolar Colombia</strong> es su aliado estratégico en la transición hacia un futuro energético sostenible. Combinamos la precisión de la ingeniería alemana con el conocimiento del mercado local para ofrecer soluciones solares a medida.</p>
+                        <p>Nuestro equipo de expertos se dedica a la planificación, instalación y mantenimiento de proyectos para el sector empresarial, industrial y residencial, garantizando la máxima rentabilidad y un impacto ambiental positivo.</p>
+                        <a href="#contacto" class="cta-button">Conoce Nuestra Historia</a>
+                    </div>
+                    <div class="about-us-image">
+                        <img src="assets/images/promo_carga_vehiculos.jpg" alt="Equipo de Vivasolar Colombia trabajando en una instalación solar.">
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="servicios" class="content-section">
+        <section id="servicios" class="content-section-gray">
             <div class="container">
-                <h2>Nuestros Servicios</h2>
-                <p>Ofrecemos una gama completa de servicios, desde la consultoría inicial y la planificación hasta la instalación y el mantenimiento de su sistema de energía solar.</p>
-                <!-- Se puede agregar más contenido de servicios aquí -->
+                <h2>Soluciones Integrales</h2>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <h3>Consultoría y Diseño</h3>
+                        <p>Analizamos tus necesidades y diseñamos un sistema solar a medida para maximizar tu ahorro y eficiencia.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Instalación Profesional</h3>
+                        <p>Nuestro equipo certificado garantiza una instalación segura, rápida y conforme a los más altos estándares de calidad.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Mantenimiento y Soporte</h3>
+                        <p>Ofrecemos planes de mantenimiento preventivo y correctivo para asegurar el rendimiento óptimo de tu sistema a largo plazo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="content-section">
+            <div class="container">
+                <div class="contact-form-container">
+                    <h2 class="section-title">¿Listo para empezar?</h2>
+                    <p class="section-subtitle">Contáctanos para una cotización gratuita y sin compromiso. Nuestro equipo de expertos te ayudará a encontrar la solución perfecta para tus necesidades.</p>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Nombre" required>
+                        <input type="email" placeholder="Correo Electrónico" required>
+                        <textarea placeholder="Mensaje"></textarea>
+                        <button type="submit" class="cta-button">Enviar Mensaje</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer id="contacto" class="main-footer">
+    <footer class="main-footer">
         <div class="container">
-            <div class="footer-columns">
+            <div class="footer-grid">
                 <div class="footer-column">
-                    <h3>Contacto</h3>
-                    <p>Email: info@vivasolar-colombia.com</p>
-                    <p>WhatsApp: 310 817 6786</p>
-                    <p>Teléfono: 321 844 7046</p>
+                    <a href="index.html" class="footer-logo">
+                        <img src="assets/images/logo.png" alt="Vivasolar Colombia Logo">
+                    </a>
+                    <p class="footer-tagline">Energía limpia para un futuro brillante.</p>
+                    <div class="footer-social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><rect x="4" y="4" width="16" height="16" rx="4" /><circle cx="12" cy="12" r="3" /><line x1="16.5" y1="7.5" x2="16.5" y2="7.501" /></svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><rect x="4" y="4" width="16" height="16" rx="2" /><line x1="8" y1="11" x2="8" y2="16" /><line x1="8" y1="8" x2="8" y2="8.01" /><line x1="12" y1="16" x2="12" y2="11" /><path d="M16 16v-5a2 2 0 0 0 -4 0" /></svg>
+                        </a>
+                    </div>
                 </div>
                 <div class="footer-column">
-                    <h3>Enlaces</h3>
-                    <ul>
+                    <h3 class="footer-heading">Navegación</h3>
+                    <ul class="footer-links">
+                        <li><a href="#hero">Inicio</a></li>
+                        <li><a href="#productos-destacados">Productos</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#sobre-nosotros">Quiénes Somos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Contacto</h3>
+                    <ul class="footer-contact-info">
+                        <li><strong>Email:</strong> info@vivasolar-colombia.com</li>
+                        <li><strong>WhatsApp:</strong> 310 817 6786</li>
+                        <li><strong>Teléfono:</strong> 321 844 7046</li>
+                        <li><strong>Dirección:</strong> Cra 90 No 16-97, Cali, Colombia</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Legal</h3>
+                    <ul class="footer-links">
                         <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
                         <li><a href="terminos-condiciones.html">Términos y Condiciones</a></li>
                         <li><a href="sitemap.html">Mapa del Sitio</a></li>
