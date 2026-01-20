@@ -2,20 +2,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const navToggle = document.querySelector(".nav-toggle");
   const mainNav = document.querySelector(".main-nav");
 
-  // --- Mobile Menu Logic ---
   if (navToggle && mainNav) {
-    // Initialize state
     navToggle.setAttribute("aria-expanded", "false");
 
-    // Toggle menu on button click
     navToggle.addEventListener("click", (e) => {
-      e.stopPropagation(); // Prevent immediate closing by the document listener
+      e.stopPropagation();
       const isActive = mainNav.classList.toggle("is-active");
       navToggle.classList.toggle("is-active");
       navToggle.setAttribute("aria-expanded", isActive);
     });
 
-    // Close menu when a link inside is clicked (smooth UX)
     mainNav.addEventListener("click", (event) => {
       if (event.target.tagName === "A") {
         mainNav.classList.remove("is-active");
@@ -25,9 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // --- Global Click Listener to Close Menus ---
   document.addEventListener("click", (event) => {
-    // Close mobile menu if click is outside the nav and the toggle
     if (mainNav && mainNav.classList.contains("is-active")) {
       if (
         !mainNav.contains(event.target) &&
@@ -40,13 +34,10 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       }
     }
-
-    // Note: Desktop submenus are now handled by CSS :hover, so no JS needed there.
   });
 
-  // --- Scroll Animations (Premium Feel) ---
   const observerOptions = {
-    threshold: 0.1,
+    threshold: 0.15,
     rootMargin: "0px 0px -50px 0px",
   };
 
@@ -54,14 +45,13 @@ document.addEventListener("DOMContentLoaded", () => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add("visible");
-        observer.unobserve(entry.target); // Animate once
+        observer.unobserve(entry.target);
       }
     });
   }, observerOptions);
 
-  // Select elements to animate automatically
   const animatedElements = document.querySelectorAll(
-    ".card, .hero-section h1, .hero-section p, .hero-section .cta-button, section h2"
+    ".card, .hero-section h1, .hero-section p, .hero-section .cta-button, section h2",
   );
 
   animatedElements.forEach((el) => {
